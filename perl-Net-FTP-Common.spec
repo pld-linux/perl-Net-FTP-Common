@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (uses network!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	FTP-Common
+%define		pdir	Net
+%define		pnam	FTP-Common
 Summary:	Net::FTP::Common - simplify common usages of Net::FTP
 Summary(pl):	Net::FTP::Common - uproszczenie popularnych sposobów u¿ycia Net::FTP
 Name:		perl-Net-FTP-Common
