@@ -40,7 +40,6 @@ Net::FTP mamy 100% programowania. Przy u¿yciu Net::FTP::Common mamy
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
 %{?with_tests:%{__make} test}
