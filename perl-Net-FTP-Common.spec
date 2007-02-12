@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	FTP-Common
 Summary:	Net::FTP::Common - simplify common usages of Net::FTP
-Summary(pl):	Net::FTP::Common - uproszczenie popularnych sposobÛw uøycia Net::FTP
+Summary(pl.UTF-8):   Net::FTP::Common - uproszczenie popularnych sposob√≥w u≈ºycia Net::FTP
 Name:		perl-Net-FTP-Common
 Version:	5.2b
 Release:	1
@@ -28,10 +28,10 @@ one-line, no-argument affair. In other words, you have 100%
 programming with Net::FTP. With Net::FTP::Common you will have 95%
 configuration and 5% programming.
 
-%description -l pl
-Ten modu≥ ma uczyniÊ popularne sposoby uøycia Net::FTP
-jednolinijkowymi wywo≥aniami bez argumentÛw. Innymi s≥owy, przy uøyciu
-Net::FTP mamy 100% programowania. Przy uøyciu Net::FTP::Common mamy
+%description -l pl.UTF-8
+Ten modu≈Ç ma uczyniƒá popularne sposoby u≈ºycia Net::FTP
+jednolinijkowymi wywo≈Çaniami bez argument√≥w. Innymi s≈Çowy, przy u≈ºyciu
+Net::FTP mamy 100% programowania. Przy u≈ºyciu Net::FTP::Common mamy
 95% konfiguracji i 5% programowania.
 
 %prep
