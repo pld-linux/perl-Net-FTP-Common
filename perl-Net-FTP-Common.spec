@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	FTP-Common
 Summary:	Net::FTP::Common - simplify common usages of Net::FTP
-Summary(pl.UTF-8):   Net::FTP::Common - uproszczenie popularnych sposobów użycia Net::FTP
+Summary(pl.UTF-8):	Net::FTP::Common - uproszczenie popularnych sposobów użycia Net::FTP
 Name:		perl-Net-FTP-Common
 Version:	5.2b
 Release:	1
