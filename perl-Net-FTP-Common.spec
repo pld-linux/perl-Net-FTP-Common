@@ -9,7 +9,7 @@ Summary:	Net::FTP::Common - simplify common usages of Net::FTP
 Summary(pl.UTF-8):	Net::FTP::Common - uproszczenie popularnych sposobów użycia Net::FTP
 Name:		perl-Net-FTP-Common
 Version:	5.2b
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
