@@ -8,12 +8,12 @@
 Summary:	Net::FTP::Common - simplify common usages of Net::FTP
 Summary(pl.UTF-8):	Net::FTP::Common - uproszczenie popularnych sposobów użycia Net::FTP
 Name:		perl-Net-FTP-Common
-Version:	5.2b
-Release:	2
-License:	unknown
+Version:	7.0.d
+Release:	1
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d9627db51f11c6efccf882ee4808b225
+# Source0-md5:	15b1b719b5ac26a0122775c2e68c7d5c
 %{?with_tests:BuildRequires:	perl(Net::FTP) >= 1}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -50,11 +50,16 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a samples $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc ChangeLog README
+%{perl_vendorlib}/TestConfig.pm
 %{perl_vendorlib}/%{pdir}/FTP/Common.pm
 %{_mandir}/man3/*
+%{_examplesdir}/%{name}-%{version}
