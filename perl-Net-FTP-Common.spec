@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (uses network!)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	FTP-Common
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::FTP::Common - simplify common usages of Net::FTP
 Summary(pl.UTF-8):	Net::FTP::Common - uproszczenie popularnych sposobów użycia Net::FTP
 Name:		perl-Net-FTP-Common
@@ -14,9 +14,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	15b1b719b5ac26a0122775c2e68c7d5c
-%{?with_tests:BuildRequires:	perl(Net::FTP) >= 1}
+URL:		http://search.cpan.org/dist/Net-FTP-Common/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl(Net::FTP) >= 1
+%endif
 # for Net::FTP and directory
 Requires:	perl-libnet
 BuildArch:	noarch
