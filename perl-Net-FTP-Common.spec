@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	FTP-Common
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::FTP::Common - simplify common usages of Net::FTP
 Summary(pl.UTF-8):	Net::FTP::Common - uproszczenie popularnych sposobów użycia Net::FTP
 Name:		perl-Net-FTP-Common
